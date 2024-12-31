@@ -1,0 +1,14 @@
+.slideshow-wrapper {
+    width: 100vw;
+    height: 100vw;
+    transform-origin: top left;
+    transform: rotate(-90deg) translateX(-100vh);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.content-wrapper {
+    width: 200vw;
+    transform-origin: top left;
+    transform: rotate(90deg) translateY(-100vh);
+}

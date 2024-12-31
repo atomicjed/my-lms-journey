@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import SlideshowWrapper from "./Features/Layout/SlideshowWrapper";
+import MyLmsJourney from "./Features/MyLmsJourney/MyLmsJourney";
+import FirstDay from "./Features/FirstDay/FirstDay";
+import DontMessUp from "./Features/DontMessUp/DontMessUp";
+import Clock from "./Features/Clock/Clock";
+import UiTasks from "./Features/UiTasks/UiTasks";
+import FinalBosses from "./Features/FinalBosses/FinalBosses";
+import ThanksForListening from "./Features/ThanksForListening/ThanksForListening";
+import Benefits from "./Features/Benefits/Benefits";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <>
+          <MyLmsJourney/>
+          <FirstDay />
+          <Clock />
+          <DontMessUp />
+          <UiTasks />
+          <FinalBosses />
+          <Benefits />
+          <ThanksForListening />
+      </>
+)
+  ;
 }
 
 export default App;

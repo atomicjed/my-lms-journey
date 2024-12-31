@@ -1,0 +1,47 @@
+.clock {
+    width: 100px;
+    height: 100px;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.clock-hand {
+    width: 2px;
+    background: white;
+    position: absolute;
+    left: 50%;
+    transform-origin: bottom;
+    transform: translateX(-50%);
+}
+
+.second-hand {
+    height: 45%;
+    top: 5%;
+    animation: spin 60s linear infinite;
+}
+
+.minute-hand {
+    height: 40%;
+    top: 10%;
+    animation: spin 1s linear infinite;
+}
+
+.hour-hand {
+    height: 30%;
+    top: 20%;
+    animation: spin 12s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
